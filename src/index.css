@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.appMain {
+  display: flex;
+  flex-grow: 10%;
+}
+
 a {
   text-decoration: none;
 }
@@ -150,4 +155,74 @@ a {
   margin-right: auto;
   margin-left: 2rem;
   margin-top: 2rem;
+}
+
+/* ================ leftNavBar ========= */
+
+.leftNavBar {
+  height: 100%;
+  width: 20%;
+  position: sticky;
+  margin-top: 50px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.leftNavBar .header {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.leftNavBar .header :last-child {
+  color: rgb(238, 106, 128);
+}
+.leftNavBar .header :first-child {
+  color: black;
+}
+
+.categories a {
+  color: rgb(34, 33, 33);
+}
+.categories input {
+  height: 15px;
+  width: 15px;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  border: 0.5px solid rgb(223, 218, 218);
+  padding: 10px 0;
+}
+
+.categories .first {
+  margin-right: auto;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.categories .component {
+  display: flex;
+  margin-left: 38px;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.categories .component :nth-child(2) {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.categories .brand i {
+  margin-left: 8rem;
+  /* background-color: greenyellow; */
+  color: gray;
+  background-color: rgb(245, 245, 246);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+/* ============== main.js =============== */
+
+.main {
+  width: 70%;
+  margin-left: 5%;
 }
